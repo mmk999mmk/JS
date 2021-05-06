@@ -1,0 +1,90 @@
+let message="hi";
+
+console.log(message);
+-----------------------------------------------------------
+
+document.getElementById("");
+
+document.getElementById("").textContent="";
+
+document.getElementById("").style.color="";
+
+document.getElementById("").style.backgroundColor="";
+
+document.getElementById("").style.fontSize="";
+-----------------------------------------------------------
+function func(){
+
+}
+-----------------------------------------------------------
+Number	        All the numbers are of Number type.
+Boolean	        Boolean values are either true or false.
+String	        String is a stream of characters. The String should be enclosed with Single quotes, Double quotes, or Backticks.
+Undefined	If a value is not assigned to the variable, then it takes undefined as its value. In JS, undefined refers to the 
+                value that is not being assigned.
+
+----------------------------------------------------------
+console.log(typeof(b));
+----------------------------------------------------------
+let b = parseInt(a);
+----------------------------------------------------------
+if loop:
+
+
+if (conditionA) {
+  Block1;
+}
+else if (conditionB) {
+  Block2;
+}
+else {
+  Block3;
+}
+----------------------------------------------------------
+console.log(Math.random());
+----------------------------------------------------------
+console.log(Math.ceil(95.906698007537561));  // 96
+----------------------------------------------------------
+HTML Input Element:
+
+Text           ----- <input type="text" />
+Password       ----- <input type="password" />
+Radio
+Date
+Checkbox
+
+
+<input type="checkbox" />
+<label for="myCheckbox">Graduated</label>
+let labelElement = document.createElement("label");
+labelElement.setAttribute("for", "myCheckbox");
+document.getElementById("inputElement").value;
+
+<input type="text" placeholder="Enter your name" />
+----------------------------------------------------------
+alert:
+
+alert("Enter Valid Text");
+----------------------------------------------------------
+Loose equal to vs Strict equal to (== vs ===):
+
+console.log(2 == '2');  // true
+console.log(2 === '2');  // false
+-----------------------------------------------------------
+for loop:
+
+let a=[1,2,3,4,5,9]
+for (let a1 of a){
+    console.log(a1)
+}//print the items in list
+for (let a1 in a){
+    console.log(a1)
+}//print the indexes in list
+--------------------------------------------------------------
+
+Spinner:
+
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+

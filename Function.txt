@@ -1,0 +1,53 @@
+Functions:
+
+Function Declaration:
+
+function showMessage() {
+  console.log("Hello");
+}
+
+showMessage();
+--------------------------------
+Function Expression:
+
+let showMessage = function() {
+  console.log("Hello");
+};
+
+showMessage();
+---------------------------------------------------
+let divvel=document.getElementById("divv");
+let h12el=document.getElementById("h12");
+let hel=document.createElement("h1");
+divvel.appendChild(hel);
+let buttel=document.createElement("button");
+buttel.textContent="submithere";
+divvel.appendChild(buttel);
+h12el.classList.add('s')
+buttel.onclick=function(){
+    divvel.removeChild(h12el)
+    hel.textContent="Message";
+    hel.classList.add("m")
+};
+
+----------------------
+.getElementById()
+----------------------
+.createElement()
+.appendChild()
+.removeChild()
+-----------------------
+.classList.add();
+.classList.remove();
+-----------------------
+event listeners dynamically:
+
+let btnElement = document.createElement("button");
+btnElement.textContent = "Change Heading";
+document.getElementById("myContainer").appendChild(btnElement);
+
+btnElement.onclick = function(){
+  console.log("click event triggered");
+};
+
+---------------------------------------------------------------------

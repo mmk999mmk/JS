@@ -1,0 +1,19 @@
+The classList.toggle() method is used to toggle between adding and removing a class name from an HTML element.
+--------------------------------------------------------------
+The checked property sets or returns the checked status of an HTML checkbox input element as a boolean value.
+--------------------------------------------------------------
+let dict={firstname:"Manoj",lastname:"Kumar",age:23};
+localStorage.setItem("dict",JSON.stringify(dict));
+let n=localStorage.getItem("dict");
+let m=JSON.parse(localStorage.getItem("dict"));
+console.log((m))
+console.log(typeof(m))
+console.log((n))
+console.log(typeof(n))
+----------------
+JSON.stringify()
+JSON.parse()
+localStorage.getItem()
+localStorage.setItem("","")
+localStorage.removeItem(key)
+---------------------------------------------------------------

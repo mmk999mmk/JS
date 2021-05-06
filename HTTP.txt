@@ -1,0 +1,110 @@
+HTTP:
+-----
+Uniform Resource Locator (URL):
+
+protocol://domainName       /path  ?query-parameters
+http    ://www.flipkart.com/watches?type=digital&rating=4
+
+http                   is a Protocol
+www.flipkart.com       is a Domain Name
+/watches               is a Path
+type=digital&rating=4  is the Query Parameters
+------------------------------------------------------------------------------------
+HTTP Requests:
+------------------------------------------------------------------------------------
+
+Start Line:
+
+           URL:
+                  Protocol:
+                           HTTP
+                           HTTPS
+                  Domain Name
+                  Path
+                  Query Parameters
+
+           HTTP Method :
+
+                      GET (Read)	Request for a resource(s) from the server
+                      POST (Create)	Submit data to the server
+                      PUT (Update)	The data within the request must be stored at the URL supplied, replacing any existing data
+                      DELETE (Delete)	Delete a resource(s)
+
+           HTTP Version:
+
+                      1991	HTTP/0.9
+                      1994	HTTPS
+                      1996	HTTP/1.0
+                      1997	HTTP/1.1
+                      2015	HTTP/2
+                      2019	HTTP/3
+------------------------------------------------------------------------------------------------------------
+Headers:
+
+HTTP Headers let the client and the server to pass additional information with an HTTP request or response.
+-------------------------------------------------------------------------------------------------------------
+Body:
+
+We place the data in the Request body when we want to send data to the server.
+
+HTTP Requests
+
+Start Line
+    URL
+       Protocol
+            HTTP
+            HTTPS
+       Domain Name
+       Path
+       Query Parameters
+    HTTP Method
+       GET (Read)
+       POST (Create)
+       PUT (Update)
+       DELETE (Delete)
+    HTTP Version
+Headers
+Body
+-------------------------------------------------------------------------------------------------------------
+
+HTTP Response includes:
+-------------------------------------------------------------------------------------------------------------
+Status Line
+   HTTP version
+   Status code :
+             1XX	Information
+             2XX	Success
+             3XX	Redirection
+             4XX	Client Error
+             5XX	Server Error	
+   Status text:
+             200	OK
+             204	No Response
+             301	Moved Permanently
+             401	Unauthorized
+             403	Forbidden
+             404	Not Found
+---------------------------------------------------------------------------------------
+Headers
+---------------------------------------------------------------------------------------
+Body:
+Response Body contains the resource data that was requested by the client.
+---------------------------------------------------------------------------------------
+HTTP Responses:
+
+Status Line
+       HTTP version
+       Status code
+               1XX
+               2XX
+               3XX
+               4XX
+               5XX
+       Status text
+Headers
+Body
+--------------------------------------------------------------------------------------------------------
+
+
+
+

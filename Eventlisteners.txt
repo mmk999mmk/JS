@@ -1,0 +1,53 @@
+Event Listeners:
+--------------------------------------------------
+Inline event listeners:
+
+<button onclick="greeting()">Greet</button>
+function greeting() {
+  console.log("Hi Rahul");
+}
+-----------------------------------------------------
+onevent listeners:
+
+<button id="greetBtn">Greet</button>
+let greetBtnEl = document.getElementById("greetBtn");
+
+greetBtnEl.onclick = function() {
+  console.log("Hi Rahul");
+};
+------------------------------------------------------
+addEventListener():  --- element.addEventListener(event, function);
+
+<button id="greetBtn">Greet</button>
+let greetBtn = document.getElementById("greetBtn");
+
+greetBtn.addEventListener("click", function() {
+  console.log("Hi Rahul");
+});
+
+--------------------------------------------------------
+
+Keyboard Events:
+-------------------------------------------
+keydown: -- The keydown event occurs when a key on the keyboard is pressed.
+
+let inpel=document.getElementById('inp');
+inpel.addEventListener("keydown",function(event){
+    console.log(event.target);//<input id="inp" placeholder="Enter the i/p here"></input>
+    console.log(event.key);//g 
+    console.log(event.type);//keydown 
+    console.log(event.timeStamp);
+    console.log(event.stopPropagation);
+});
+---------------------------------------------
+keyup: -- The keyup event occurs when a key on the keyboard is released.
+
+let inpel=document.getElementById('inp');
+inpel.addEventListener("keyup",function(event){
+    console.log(event.target);//<input id="inp" placeholder="Enter the i/p here"></input>
+    console.log(event.key);//g 
+    console.log(event.type);//keyup
+    console.log(event.timeStamp);
+    console.log(event.stopPropagation);
+});
+---------------------------------------------

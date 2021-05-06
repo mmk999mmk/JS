@@ -1,0 +1,20 @@
+Operators:
+
+1 Comparison Operators:
+
+Operator	                Usage	                 Description
+Equal ( == )	                a == b	        returns true if both a and b values are equal.
+Not equal ( != )	        a != b	        returns true if both a and b values are not equal.
+Strict equal ( === )	        a === b	        returns true if both a and b values are equal and of the same type.
+Strict not equal ( !== )        a !== b	        returns true if either a and b values are not equal or of the different type.
+Greater than ( > )	        a > b	        returns true if a value is greater than b value.
+Greater than or equal ( >= )	a >= b	        returns true if a value is greater than or equal to b value.
+Less than ( < )	                a < b	        returns true if a value is less than b value.
+Less than or equal ( <= )	a <= b	        returns true if a value is less than or equal to b value.
+
+2 Logical Operators:
+
+Operator	Usage	Description
+AND ( && )	a && b	returns true if both a and b values are true.
+OR ( | | )	a | | b	returns true if either a or b value is true.
+NOT ( ! )	!a	returns true if a value is not true.

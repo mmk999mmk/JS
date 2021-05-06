@@ -1,0 +1,73 @@
+Array:
+------------------------------------------
+let myArray = [5, "six", 2, 8.2];
+console.log(myArray);  // [5, "six", 2, 8.2]
+console.log(myArray[0]);  // 5
+------------------------------------------
+let lengthOfArray = myArray.length;
+console.log(lengthOfArray);  // 4
+------------------------------------------
+myArray[1] = 6;
+console.log(myArray);  // [5, 6, 2, 8.2]
+
+------------------------------------------
+let myArray = [5, "six", 2, 8.2];
+myArray[1] = 7;
+myArray.pop();
+myArray.push("seven");
+
+console.log(myArray);//[5, 7, 2, "seven"]
+------------------------------------------------
+myArray.pop(); -- removes the element from last
+myArray.push(66); -- adds the element to last
+------------------------------------------------
+array methods:
+
+includes, indexOf, lastIndexOf, find, findIndex()	Finding Elements
+push, unshift, splice	                                Adding Elements
+pop, shift, splice	                                Removing Elements
+concat, slice	                                        Combining & Slicing Arrays
+join	                                                Joining Array Elements
+sort	                                                Sorting Array Elements
+--------------------------------------------------------------
+let a=[1,2,3,"Manoj",1]
+let d=["k","u"]
+let b="kumar is good boy"
+console.log(a.includes(1))//true
+console.log(a.indexOf(3)) //2
+console.log(a.lastIndexOf(3))//2
+console.log(a.push(99))//6
+console.log(a.unshift())//6
+a.splice(0,0,25)//
+console.log(a)//[1, 1, 2, 3, "Manoj"]
+console.log(a.pop())//99
+console.log(a.shift())//25
+console.log(a.concat(d))//[1, 2, 3, "Manoj", 1, "k", "u"]
+console.log(a.slice(1,3))//[2, 3]
+console.log(a.join(" "))//1 2 3 Manoj 1 
+console.log(a.sort())//[1, 1, 2, 3, "Manoj"]
+----------------------------------------------------------------
+let c=a.findIndex(function(each){
+    if (3==each){
+        return true;
+    }else{
+        return false;
+    }
+});
+console.log(c)//2     ------------- if found gives the index of the 3
+------------------------------------
+let c=a.findIndex(function(each){
+    if (33==each){
+        return true;
+    }else{
+        return false;
+    }
+});
+console.log(c)//-1       ----------- if not found in the array
+-------------------------------------
+let c=a.find(function(each){
+    console.log(each)
+});
+console.log(c)//undefined
+-------------------------------------------------------------------
+

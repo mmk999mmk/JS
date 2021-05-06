@@ -1,0 +1,84 @@
+GET:
+
+let url="https://gorest.co.in/public-api/users";
+let options={
+    method:"GET"
+};
+fetch(url,options)
+.then(function(response){
+    return response.text();
+}).then(function(status){
+    console.log(status);
+});
+
+---------------------------------------------------------------
+POST:
+
+let data = {
+  name: "Manoj",
+  gender: "Male",
+  email: "mssrmkumar@gmail.com",
+  status: "Active"
+};
+let url="https://gorest.co.in/public-api/users";
+let options={
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json",
+      Accept:"application/json",
+      Authorization:"Bearer b17206ed19de19ca0b917fe2107292cd4e15dcd9ca9d202801b26cc2e97f82b7"
+    },
+    body:JSON.stringify(data)
+};
+fetch(url,options)
+.then(function(response){
+    return response.text();
+}).then(function(status){
+    console.log(status);
+});
+---------------------------------------------------------------
+PUT:
+
+let data = {
+  email: "mmk999mmk@gmail.com"
+};
+let url="https://gorest.co.in/public-api/users/1636";
+let options={
+    method:"PUT",
+    headers:{
+      "Content-Type":"application/json",
+      Accept:"application/json",
+      Authorization:"Bearer b17206ed19de19ca0b917fe2107292cd4e15dcd9ca9d202801b26cc2e97f82b7"
+    },
+    body:JSON.stringify(data)
+};
+fetch(url,options)
+.then(function(response){
+    return response.text();
+}).then(function(status){
+    console.log(status);
+});
+------------------------------------------------------------------
+DELETE:
+
+let url="https://gorest.co.in/public-api/users/1636";
+let options={
+    method:"DELETE",
+    headers:{
+      "Content-Type":"application/json",
+      Accept:"application/json",
+      Authorization:"Bearer b17206ed19de19ca0b917fe2107292cd4e15dcd9ca9d202801b26cc2e97f82b7"
+    }
+};
+fetch(url,options)
+.then(function(response){
+    return response.text();
+}).then(function(status){
+    console.log(status);
+});
+------------------------------------------------------------------
+response.text()
+response.json()
+response.status
+response.statusText
+response.url
